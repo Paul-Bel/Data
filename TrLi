@@ -1,0 +1,19 @@
+public class Traffic {
+  public static String updateLight(String current) {
+  if (current=="green"){
+return "yellow";      
+  }
+  if (current =="yellow"){
+      return "red";
+  }
+  if (current=="red"){
+      return"green";
+  }
+  else {return "error";}
+  }
+    public static void main(String[] args) {
+        Traffic a = new Traffic();
+        System.out.println(updateLight("red"));
+    }
+
+}
